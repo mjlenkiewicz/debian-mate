@@ -1,1 +1,1 @@
-# debian-mate
+Here you have the dockerfile and all the extra files for building and running a fully containerized Linux Debian 12 "Bookworm" with Mate Desktop environment for development, testing, and debugging or running networking tools; the how-to, notes, and comments are in @README1 & 2 files. IMPORTANT: The dockerfile isn't already optimized (that could help for better understanding to those who are not familiar with docker/container tech)!!!
