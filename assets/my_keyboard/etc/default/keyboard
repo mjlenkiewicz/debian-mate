@@ -1,0 +1,5 @@
+XKBMODEL="pc105"
+XKBLAYOUT="latam"
+XKBVARIANT=""
+XKBOPTIONS="lv3:ralt_switch,terminate:ctrl_alt_bksp"
+BACKSPACE="guess"
