@@ -52,11 +52,7 @@ The container features network debugging and simulation tools such as:
     - wireshark (is not installed; if you would like to install it, uncomment the corresponding lines)
 
 ## Software Management
-If you do not require the included software, comment out or remove the corresponding entries
-in the Dockerfile, and/or you can extend functionality by adding custom software modifying the
-dockerfile or using a runtime installation, but remember that changes made during runtime (via
-GUI/terminal) will be ephemeral unless you commit the modified container to a new image or update
-the original Dockerfile and rebuild.
+If you do not require the included software, comment out or remove the corresponding entries in the Dockerfile, and/or you can extend functionality by adding custom software modifying the dockerfile or using a runtime installation, but remember that changes made during runtime (via GUI/terminal) will be ephemeral unless you commit the modified container to a new image or update the original Dockerfile and rebuild.
 
 ## Installation
 
@@ -75,7 +71,7 @@ Then, with the files already on your PC run the following commands ...
 sudo docker network create -d bridge --subnet 192.168.5.0/24 --gateway 192.168.5.1 mydockernet
 ```
 #### on Windows
-    same as before without sudo command
+Same as before without sudo command.
 
 #### 2) build the container image usign the dockerfile provided
 #### on Linux
@@ -83,7 +79,7 @@ sudo docker network create -d bridge --subnet 192.168.5.0/24 --gateway 192.168.5
 sudo docker build -f Dockerfile.mate -t debian-mate:dev .
 ```
 #### on Windows
-    same as before without sudo command
+Same as before without sudo command.
     
 #### 3) run the container (you must see the bash when it started, then read User Credentials and Access to MATE GUI sections)
 #### on Linux
@@ -91,7 +87,7 @@ sudo docker build -f Dockerfile.mate -t debian-mate:dev .
 sudo docker run --rm -ti -p 3390:3389 --net=mydockernet --ip="192.168.5.5" --cap-add=NET_ADMIN --cap-add=NET_RAW --cap-add=SYS_ADMIN --cap-add=CAP_DAC_READ_SEARCH -h debian debian-mate:dev
 ```
 #### on Windows
-    same as before without sudo command
+Same as before without sudo command.
 
 
 ## Command "docker run" options reference:
@@ -132,11 +128,10 @@ _Sets the container’s hostname to debian, visible in commands like hostname._
     >USER = test</br>
     >PASS = test9455</br>
 
-IMPORTANT: To modify passwords, edit the Dockerfile and regenerate hashed credentials using Cryptool's OpenSSL tool on https://www.cryptool.org/en/cto/openssl
+IMPORTANT: To modify passwords, edit the Dockerfile and regenerate hashed credentials using Cryptool's OpenSSL tool on https://www.cryptool.org/en/cto/openssl (use the command "openssl passwd -6 and follow the steps")
 
-## Access to MATE GUI (only via remote desktop connection)
-Open an RDP connection to localhost:3390 and enter the user credentials. It is recommended
-to access using the 'test' user and use the sudo command for running privileged operations.
+## Access to MATE GUI
+Since you will not use a Linux system in a traditional way, you can only access the MATE GUI via RDP (remote desktop protocol) by connecting to localhost:3390 and using the provided user credentials. We recommend using the 'test' user with sudo for privileged operations.
 
 Once you're inside the GUI, open a terminal and ...
 
