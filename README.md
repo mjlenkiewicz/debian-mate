@@ -182,3 +182,4 @@ You can see some related cool stuff on ...</br>
 https://www.youtube.com/@NetworkChuck</br>
 https://www.youtube.com/@agiledevart</br>
 https://www.youtube.com/@TechnoTim</br>
+https://www.youtube.com/@Fireship</br>
