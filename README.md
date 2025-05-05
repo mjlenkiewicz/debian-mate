@@ -17,7 +17,7 @@ Happy coding/debugging !!!
 [Access to MATE GUI](#access-to-mate-gui)</br>
 [Post-Deployment Workflow](#post-deployment-workflow)</br> 
 [Contributing](#contributing)</br> 
-[License](#license)</br> 
+[Licenses](#licenses)</br> 
 [Contact](#contact)</br>
 [References](#references)</br>
 
