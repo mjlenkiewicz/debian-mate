@@ -130,7 +130,7 @@ _Sets the container’s hostname to debian, visible in commands like hostname._
     >USER = test</br>
     >PASS = test9455</br>
 
-IMPORTANT: To modify passwords, edit the Dockerfile and regenerate hashed credentials using Cryptool's OpenSSL tool on https://www.cryptool.org/en/cto/openssl (use the command "openssl passwd -6 and follow the steps")
+IMPORTANT: To modify passwords, edit the Dockerfile and regenerate hashed credentials using Cryptool's OpenSSL tool on https://www.cryptool.org/en/cto/openssl (use the command _"openssl passwd -6"_ and follow the steps")
 
 ## Access to MATE GUI
 Since you will not use a Linux system in a traditional way, you can only access the MATE GUI via RDP (remote desktop protocol) by connecting to localhost:3390 and using the provided user credentials. We recommend using the 'test' user with sudo for privileged operations.
