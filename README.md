@@ -1,4 +1,6 @@
-# Linux on Docker >>> Debian-Mate for DEVs
+# Linux in a Docker Container >>> Debian-Mate for DEVs
+
+Docker is designed to run applications within isolated environments, and Linux distributions can be the base for these containers.
 
 Here you have the dockerfile and all the extra files for building and running a fully containerized Linux Debian 12 "Bookworm" with Mate Desktop environment for development, testing, and debugging or running networking tools.
 
