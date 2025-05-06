@@ -1,4 +1,4 @@
-# Linux in a Docker Container >>> Debian-Mate for DEVs
+# Linux in a Docker Container > Debian-Mate for DEVs
 
 Docker is designed to run applications within isolated environments, and Linux distributions can be the base for these containers.
 
