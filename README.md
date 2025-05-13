@@ -89,7 +89,7 @@ Then, with the files already on your PC run the following commands ...
     sudo docker run --rm -ti -p 3390:3389 --net=mydockernet --ip="192.168.5.5" --cap-add=NET_ADMIN --cap-add=NET_RAW --cap-add=SYS_ADMIN --cap-add=CAP_DAC_READ_SEARCH -h debian debian-mate:dev
     ```
     * on Windows</br>
-    Same as before without sudo command.v
+    Same as before without sudo command.</br>
 
 
 ## Command "docker run" options reference:
@@ -137,25 +137,25 @@ Since you will not use a Linux system in a traditional way, you can only access 
 
 Once you're inside the GUI, open a terminal and ...
 
-1) If you want to run "conda" cmd to activate virtual envs (there is one already created called "py39env") ...
-```
-source /opt/miniconda3/etc/profile.d/conda.sh
-```
-<emsp>... and then ...
-```
-conda activate py39env
-```
+   1) If you want to run "conda" cmd to activate virtual envs (there is one already created called "py39env") ...
+   ```
+   source /opt/miniconda3/etc/profile.d/conda.sh
+   ```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... and then ...</br>
+   ```
+   conda activate py39env
+   ```
 
-2) If you want to make available a network shared directory ...
-```
-sudo mkdir /mnt/<your mounting point>
-```
-... and then ...
-```
-sudo mount -t cifs //<your server IP address>/<your shared directory> /mnt/<your mounting point> -o username='<your network user>',password='<your network pass>',domain='<your domain name>',uid=1000,gid=1000,nofail
-```
+   2) If you want to make available a network shared directory ...
+   ```
+   sudo mkdir /mnt/<your mounting point>
+   ```
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... and then ...</br>
+   ```
+   sudo mount -t cifs //<your server IP address>/<your shared directory> /mnt/<your mounting point> -o username='<your network user>',password='<your network pass>',domain='<your domain name>',uid=1000,gid=1000,nofail
+   ```
 
-... fill it with your correct data and execute them !!!
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... fill it with your correct data and execute them !!!</br>
 
 ## Post-Deployment Workflow
 a) Temporary Use: No further action required.</br>
