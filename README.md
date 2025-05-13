@@ -67,29 +67,29 @@ https://docs.docker.com/desktop/setup/install/windows-install/</br>
 
 Then, with the files already on your PC run the following commands ...
 
-#### 1) create a network for using with the container
-#### on Linux
-```
-sudo docker network create -d bridge --subnet 192.168.5.0/24 --gateway 192.168.5.1 mydockernet
-```
-#### on Windows
-Same as before without sudo command.
+1) create a network for using with the container</br>
+    * on Linux</br>
+    ```
+    sudo docker network create -d bridge --subnet 192.168.5.0/24 --gateway 192.168.5.1 mydockernet
+    ```
+    * on Windows</br>
+    Same as before without sudo command.</br>
 
-#### 2) build the container image usign the dockerfile provided
-#### on Linux
-```
-sudo docker build -f Dockerfile.mate -t debian-mate:dev .
-```
-#### on Windows
-Same as before without sudo command.
-    
-#### 3) run the container (you must see the bash when it started, then read User Credentials and Access to MATE GUI sections)
-#### on Linux
-```
-sudo docker run --rm -ti -p 3390:3389 --net=mydockernet --ip="192.168.5.5" --cap-add=NET_ADMIN --cap-add=NET_RAW --cap-add=SYS_ADMIN --cap-add=CAP_DAC_READ_SEARCH -h debian debian-mate:dev
-```
-#### on Windows
-Same as before without sudo command.
+2) build the container image usign the dockerfile provided</br>
+    * on Linux</br>
+    ```
+    sudo docker build -f Dockerfile.mate -t debian-mate:dev .
+    ```
+    * on Windows</br>
+    Same as before without sudo command.</br>
+        
+3) run the container (you must see the bash when it started, then read User Credentials and Access to MATE GUI sections)</br>
+    * on Linux</br>
+    ```
+    sudo docker run --rm -ti -p 3390:3389 --net=mydockernet --ip="192.168.5.5" --cap-add=NET_ADMIN --cap-add=NET_RAW --cap-add=SYS_ADMIN --cap-add=CAP_DAC_READ_SEARCH -h debian debian-mate:dev
+    ```
+    * on Windows</br>
+    Same as before without sudo command.v
 
 
 ## Command "docker run" options reference:
@@ -125,7 +125,7 @@ _Sets the container’s hostname to debian, visible in commands like hostname._
 ## User Credentials
 1)
     >USER = root</br>
-    >PASS = root9355</br>
+    >PASS = root9455</br>
 2)
     >USER = test</br>
     >PASS = test9455</br>
