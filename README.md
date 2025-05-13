@@ -167,12 +167,12 @@ b) Persistent Work: For development/debugging, preserve data by: Creating a deri
 - Submit a pull request
 
 ## Licenses
-Please read on ...
+Please refer to ...
 * https://www.debian.org
 * https://mate-desktop.org
 * https://github.com/moby/moby/blob/master/LICENSE
 * https://docs.docker.com/subscription/desktop-license/
-* For other software, please visit the respective web page.
+* For other software, please visit their respective website.
 
 ## Contact
 Mariano J. Lenkiewicz</br>
